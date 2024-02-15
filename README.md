@@ -16,7 +16,7 @@ from k_general_kit.gen_func import all
 
 print(nel(45)) # prints "quarante cinq"
 
-print(words_sentence("This is a test", 'en')) # prints "['Hello', 'everyone']"
+print(words_sentence("Hello, everyone!", 'en')) # prints "['Hello', 'everyone']"
 
 
 ```
