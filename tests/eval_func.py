@@ -8,9 +8,11 @@ import k_general_kit.gen_obj
 from k_general_kit.gen_obj import*
 import k_general_kit.search_sort
 from k_general_kit.search_sort import*
+import k_general_kit.eval_sequence
+from k_general_kit.eval_sequence import*
 
-print("Welcome! This program aims to eval easily some expressions using objets of the modules : 0-math, 1-gen_func, 2-search_sort, 3-gen_obj.")
-Modules = ('math', 'k_general_kit.gen_func', 'k_general_kit.search_sort', 'k_general_kit.gen_obj')
+print("Welcome! This program aims to eval easily some expressions using objets of the modules : 0-math, 1-gen_func, 2-search_sort, 3-gen_obj 4-eval_sequence.")
+Modules = ('math', 'k_general_kit.gen_func', 'k_general_kit.search_sort', 'k_general_kit.gen_obj', 'k_general_kit.eval_sequence')
 
 Helps = input("\nIf you want help on at least one of these modules, enter the corresponding number(s) by separating them with a comma. Ex: 0,1 : ")
 

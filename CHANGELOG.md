@@ -1,3 +1,7 @@
+## 1.0.1
+
+correction of some incoherences
+
 ## 1.0.0
 
 Adding of the module eval_sequence

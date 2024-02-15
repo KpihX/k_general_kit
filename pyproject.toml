@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "k_general_kit"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
     {name="KpihX", email="kapoivha@gmail.com"}
 ]
