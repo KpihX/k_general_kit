@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*-coding:UTF-8 -*
+
+from math import*
+from k_general_kit.gen_func import*
+from k_general_kit.gen_obj import*
+from k_general_kit.search_sort import*
+
+print("Welcome! This program aims to eval easily some expressions using objets of the modules : 0-math, 1-gen_func, 2-search_sort, 3-gen_obj.")
+Modules = ('math', 'gen_func', 'search_sort', 'gen_obj')
+
+Helps = input("\nIf you want help on at least one of these modules, enter the corresponding number(s) by separating them with a comma. Ex: 0,1 : ")
+
+if Helps.strip() != '':
+	Helps = Helps.split(',')
+	try:
+		for i in Helps:
+			print('')
+			print(help(Modules[int(i)]))
+	except:
+
+		
+		print("Invalid input!")
+		
+while True:
+	expression = input("\nEnter the expression to eval (Ex: nel(2)) (An empty input stop the entry process) : ")
+	if expression.strip() == '':
+		break
+	print('')
+	answer = eval(expression)
+	if answer != None:
+		print(f"{expression} = {answer}.")
+	bool = input("\nAgain ? (y or n) : ").lower()
+	if bool != 'y':
+		break
+	
+input("Glad to have served you! Press 'Enter' to quit.")
