@@ -355,6 +355,6 @@ def merge_sort(L:list[real|str], start:int = 0, end:int = -1, ord:int = 0):
 	L[start: end] = merge_list(L1, L2, ord = ord)
 
 if __name__ == '__main__':
-	import search_sort as search_sort
+	import search_sort
 	help(search_sort)
 	input("Glad to have served you! Press 'Enter' to quit.")

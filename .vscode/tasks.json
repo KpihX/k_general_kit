@@ -19,7 +19,7 @@
             "command": "python3 -m bin.add_prime",
             "problemMatcher": [],
             "group": {
-                "kind": "test",
+                "kind": "none",
                 "isDefault": true
             }
         }
