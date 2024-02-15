@@ -1,4 +1,4 @@
-# K-General-Kit ⏱️
+# K-General-Kit 🛠️
 
 This project aims to provide a rich set of useful general functions frequently needed and frequent objects.
 
@@ -7,6 +7,7 @@ This project aims to provide a rich set of useful general functions frequently n
 * It contains a general library, for general functions on containiers, string, a bit of mathematics
 * We also find a search_sort library, with powerful search and sort algorithms going from the sequential search to the exponential search and from the select sort to the merge sort.
 * We also have the gen_obj library for frequents objects like math constants with the ability to ameliorate their precisions
+* We also have eval_sequence, which gives powerful functions to evaluate recursive functions, bypassing the recursivity.
 * Thera are also an interesting set of datas going from prime numbers collections to txt dictionnaries (for words counting functions).
 
 ## Examples of use 📝
