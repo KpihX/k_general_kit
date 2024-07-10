@@ -6,8 +6,8 @@ import k_general_kit.gen_func
 from k_general_kit.gen_func import*
 import k_general_kit.gen_obj
 from k_general_kit.gen_obj import*
-import k_general_kit.search_sort
-from k_general_kit.search_sort import*
+import k_general_kit.search_sort.search_sort
+from k_general_kit.search_sort.search_sort import*
 import k_general_kit.eval_sequence
 from k_general_kit.eval_sequence import*
 

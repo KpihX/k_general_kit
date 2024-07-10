@@ -3,7 +3,7 @@
 
 import sys
 from pickle import Pickler, Unpickler
-from math import*
+from math import *
 from string import ascii_uppercase as Upper, ascii_lowercase as Lower
 
 def arr(x, n, b = True):
@@ -42,8 +42,12 @@ def arr(x, n, b = True):
 	except:
 		return "Les données saisies ne sont pas toutes valides! Veuillez vous réferer à l'aide!"
 
-def bye():
-	input("\nGlad to have served you! Press 'Enter' to quit.")
+def bye(lang:str='en'):
+	if lang == 'fr':
+		msg = "Ravi de vous avoir servi! Pressez 'Entrer' pour quitter."
+	else:
+		msg = "Glad to have served you! Press 'Enter' to quit."
+	input("\n" + msg)
 	sys.exit()
 
 def Caesar(msg, key):
@@ -957,47 +961,47 @@ def pri2(n1, n2):
 		return L
 
 def pri3(n: int, start: int = 0) -> list:
-    """
-    Returns a list of the first 'n' prime numbers, starting at 'start'.
+	"""
+	Returns a list of the first 'n' prime numbers, starting at 'start'.
 
-    Parameters:
-        n (int): The number of prime numbers to return.
-        start (int): The starting point to search for prime numbers. Default is 0.
+	Parameters:
+		n (int): The number of prime numbers to return.
+		start (int): The starting point to search for prime numbers. Default is 0.
 
-    Returns:
-        list: A list of the first 'n' prime numbers.
+	Returns:
+		list: A list of the first 'n' prime numbers.
 
-    Raises:
-        AssertionError: If 'n' is not a positive integer or 'start' is not a non-negative integer.
+	Raises:
+		AssertionError: If 'n' is not a positive integer or 'start' is not a non-negative integer.
 
-    """
+	"""
 
-    # Check if 'n' is a positive integer
-    assert type(n) == int and n > 0, f"n={n} must be a strict positive integer."
+	# Check if 'n' is a positive integer
+	assert type(n) == int and n > 0, f"n={n} must be a strict positive integer."
 
-    # Check if 'start' is a non-negative integer
-    assert type(start) == int and start >= 0, f"start={start} must be a strict positive integer."
+	# Check if 'start' is a non-negative integer
+	assert type(start) == int and start >= 0, f"start={start} must be a strict positive integer."
 
-    # Initialize an empty list to store the prime numbers
-    Pri = []
+	# Initialize an empty list to store the prime numbers
+	Pri = []
 
-    # Initialize a counter and starting value for prime number search
-    i = 0
-    pri = start
+	# Initialize a counter and starting value for prime number search
+	i = 0
+	pri = start
 
-    # Iterate until 'n' prime numbers are found
-    while i < n:
-        # Check if 'pri' is a prime number using a helper function 'pri1()'
-        if pri1(pri):
-            # If 'pri' is prime, append it to the list and increment the counter
-            Pri.append(pri)
-            i += 1
-        
-        # Move to the next number
-        pri += 1
-    
-    # Return the list of prime numbers
-    return Pri
+	# Iterate until 'n' prime numbers are found
+	while i < n:
+		# Check if 'pri' is a prime number using a helper function 'pri1()'
+		if pri1(pri):
+			# If 'pri' is prime, append it to the list and increment the counter
+			Pri.append(pri)
+			i += 1
+		
+		# Move to the next number
+		pri += 1
+	
+	# Return the list of prime numbers
+	return Pri
 	
 def print_func(h:str, before:str = "")-> bool:
 	"""It evaluates and prints an expression h, managing errors. It returns True if operations were held normally and False else. It puts a message 'before', before printing the result if no error occurred. It returns True if no error occurred and False else."""
