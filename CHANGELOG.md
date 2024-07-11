@@ -1,3 +1,7 @@
+## 1.1.1
+
+Corrections on print_elements() method of Heap class & Completion of the README.md
+
 ## 1.1.0
 
 Adding of heap sort

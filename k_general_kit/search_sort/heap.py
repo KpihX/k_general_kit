@@ -170,17 +170,11 @@ class Heap:
             self.heap_size -= 1
             self.heapify(0, order)
 
-    def print_elements(self) -> str:
+    def print_elements(self) -> None:
         """
-        Returns a string representation of the heap elements.
-
-        Time Complexity: O(n), where n is the number of elements in the heap.
-        Space Complexity: O(n), as it creates a string representation of the list.
-
-        Returns:
-        str: The string representation of the heap elements.
+        Prints heap elements.
         """
-        return str(self.elements)
+        print(self.elements)
 
     def __str__(self, spacing: int = 1, arrows: str = "↙↘") -> str:
         """
