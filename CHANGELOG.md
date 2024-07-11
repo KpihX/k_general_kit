@@ -1,3 +1,7 @@
+## 1.2.0
+
+Adding of print_smooth() at the level of heap, just for fun
+
 ## 1.1.1
 
 Corrections on print_elements() method of Heap class & Completion of the README.md
